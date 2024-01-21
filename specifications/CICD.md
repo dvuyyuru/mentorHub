@@ -1,6 +1,6 @@
 # Infrastructure and CI/CD
 
-## Overview 
+## Overview
 
 Repo Structure Standards have a /src/docker folder with the following files:
 

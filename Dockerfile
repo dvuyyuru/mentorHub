@@ -7,7 +7,7 @@ COPY . .
 ARG TARGETARCH
 
 # Will not support all architectures, but amd and arm work properly 
-RUN GOOS=linux GOARCH=$TARGETARCH go build -o /src/entrypoint ./src/main.go
+RUN GOOS=linux GOARCH=$TARGETARCH 
 
 # Get branch and patch level, then create PATCH_LEVEL file
 RUN BRANCH=$(git rev-parse --abbrev-ref HEAD) && \

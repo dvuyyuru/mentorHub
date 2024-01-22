@@ -19,8 +19,7 @@ FROM ubuntu
 ARG TARGETARCH
 
 # Copy the binary and PATCH_LEVEL from the build stage
-COPY --from=base /src/entrypoint /entrypoint
-COPY --from=base /src/PATCH_LEVEL /PATCH_LEVEL
+
 
 EXPOSE 8081
-CMD ["/entrypoint"]
+CMD ["hellow world"]
